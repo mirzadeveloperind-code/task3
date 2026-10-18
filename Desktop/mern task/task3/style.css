@@ -1,0 +1,42 @@
+
+/* Step 3: Body background color */
+body {
+    background-color: lightgray;
+}
+
+/* Step 5: Dark blue color for all headings */
+.head {
+    color: darkblue;
+}
+
+/* Step 6: Background color for second heading */
+#bglime {
+    background-color: lime;
+}
+
+/* Step 7: Second heading text color red */
+#bglime {
+    color: red;
+}
+
+/* Step 8: White text for all paragraphs */
+p {
+    color: white;
+}
+
+/* Step 9: Second paragraph green */
+#para {
+    color: green;
+}
+
+/* Step 10: Second paragraph black and larger */
+p#para {
+    color: black;
+    font-size: 24px;
+}
+
+/* Step 11: Style the here text */
+span {
+    color: red;
+    font-weight: bold;
+}
