@@ -1,0 +1,264 @@
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #405466;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    min-height: 75px;
+    padding: 18px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.logo {
+    color: #35485a;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.nav-links a {
+    color: #647484;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    color: #03a9f4;
+}
+
+.username {
+    border: none;
+    border-radius: 9px;
+    padding: 12px 18px;
+    background-color: #e6f6ff;
+    color: #03a9f4;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+/* Hero section */
+.hero {
+    width: 100%;
+    max-width: 1200px;
+    min-height: 470px;
+    margin: 0 auto;
+    padding: 55px 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+.hero-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.hero-content h1 {
+    color: #405466;
+    font-size: 36px;
+    line-height: 1.25;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.hero-content h1 span {
+    color: #03a9f4;
+}
+
+.hero-content p {
+    max-width: 440px;
+    color: #8995a1;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.service-btn {
+    background: linear-gradient(90deg, #03a9f4, #27b8fa);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 17px 27px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.service-btn:hover {
+    background: #008fd5;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 0;
+}
+
+.hero-image img {
+    display: block;
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Tablet */
+@media screen and (max-width: 900px) {
+    .navbar {
+        min-height: 65px;
+        padding: 15px 5%;
+        gap: 12px;
+    }
+
+    .logo {
+        font-size: 16px;
+    }
+
+    .nav-links {
+        gap: 14px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .username {
+        padding: 10px 13px;
+        font-size: 11px;
+    }
+
+    .hero {
+        min-height: 420px;
+        padding: 35px 6%;
+        gap: 18px;
+    }
+
+    .hero-content h1 {
+        font-size: 27px;
+    }
+
+    .hero-content p {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .service-btn {
+        padding: 14px 20px;
+        font-size: 11px;
+    }
+
+    .hero-image img {
+        max-width: 300px;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+    .navbar {
+        padding: 16px 5%;
+        min-height: 65px;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .logo {
+        font-size: 16px;
+    }
+
+    /* Hide navigation links on mobile */
+    .nav-links {
+        display: none;
+    }
+
+    .username {
+        display: block;
+        padding: 10px 13px;
+        font-size: 11px;
+        white-space: nowrap;
+    }
+
+    /* Stack hero content vertically */
+    .hero {
+        min-height: auto;
+        padding: 25px 5% 35px;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        gap: 25px;
+    }
+
+    .hero-content {
+        width: 100%;
+        flex: none;
+    }
+
+    .hero-content h1 {
+        font-size: 27px;
+        line-height: 1.2;
+        margin-bottom: 9px;
+    }
+
+    .hero-content p {
+        max-width: 100%;
+        font-size: 12px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+    .service-btn {
+        padding: 14px 20px;
+        font-size: 12px;
+    }
+
+    .hero-image {
+        width: 100%;
+        flex: none;
+        justify-content: center;
+    }
+
+    .hero-image img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+}
+
+/* Small mobile screens */
+@media screen and (max-width: 360px) {
+    .hero-content h1 {
+        font-size: 23px;
+    }
+
+    .hero {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .hero-image img {
+        max-width: 250px;
+    }
+}
